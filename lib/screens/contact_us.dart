@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../components/battom_bar.dart';
 
 class ContactUs extends StatelessWidget {
   const ContactUs({super.key});
@@ -19,9 +18,9 @@ class ContactUs extends StatelessWidget {
           'Contact Us',
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: Column(children: const [
+      body: const Padding(
+        padding: EdgeInsets.all(16.0),
+        child: Column(children: [
           ListTile(
             leading: Text(
               'Contact Us By :',
@@ -55,7 +54,6 @@ class ContactUs extends StatelessWidget {
           ),
         ]),
       ),
-      bottomNavigationBar: BottomBar(),
     );
   }
 }

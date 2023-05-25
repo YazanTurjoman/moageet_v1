@@ -37,6 +37,15 @@ dependencies:
   cupertino_icons: ^1.0.2
   flutter_image_slideshow: ^0.1.4
   fluentui_icons: ^1.0.0
+  http: ^0.13.6
+  shared_preferences: ^2.1.1
+  geolocator: ^9.0.2
+  geocoding: ^2.1.0
+  rive: ^0.11.0
+  firebase_auth: ^4.6.1
+  firebase_core: ^2.13.0
+  material_design_icons_flutter: ^6.0.7096
+  google_maps_flutter: ^2.2.7
 
 dev_dependencies:
   flutter_test:
@@ -63,7 +72,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
    - assets/img/
-   - assets/img/img1.jpg
+   - assets/loadingBar/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

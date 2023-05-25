@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '../utils/styles.dart';
-import '../components/battom_bar.dart';
 
 class AboutUs extends StatelessWidget {
   const AboutUs({super.key});
@@ -20,7 +19,6 @@ class AboutUs extends StatelessWidget {
           'About Us',
         ),
       ),
-      bottomNavigationBar: BottomBar(),
     );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../components/battom_bar.dart';
+import 'package:moageet/components/battom_bar.dart';
 
 class Favorite extends StatelessWidget {
   const Favorite({super.key});
@@ -35,12 +35,13 @@ class Favorite extends StatelessWidget {
           child: ListTile(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(
-                Radius.circular(10),
+                Radius.circular(15),
               ),
             ),
             tileColor: Color(0xffF1F1F1),
             leading: CircleAvatar(
               backgroundImage: AssetImage('assets/img/image7.png'),
+              backgroundColor: Color(0xffffffff),
             ),
             title: Center(
               child: Text('LaDonna Center',
@@ -54,12 +55,13 @@ class Favorite extends StatelessWidget {
           child: ListTile(
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.all(
-                Radius.circular(10),
+                Radius.circular(15),
               ),
             ),
             tileColor: Color(0xffF1F1F1),
             leading: CircleAvatar(
               backgroundImage: AssetImage('img/image6.png'),
+              backgroundColor: Color(0xffffffff),
             ),
             title: Center(
               child: Text('Taj Spa',
@@ -69,7 +71,7 @@ class Favorite extends StatelessWidget {
           ),
         ),
       ]),
-      bottomNavigationBar: BottomBar(),
+      bottomNavigationBar: BottomBar(currentIndex: 2),
     );
   }
 }

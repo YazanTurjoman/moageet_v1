@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "312093639159",
+    "project_id": "moageet-40056",
+    "storage_bucket": "moageet-40056.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:312093639159:android:fd374988557e16ebe8aef2",
+        "android_client_info": {
+          "package_name": "com.example.moageet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "312093639159-6s8qv15thipuoa8of13rjplpq9648mqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGEVWZtebL-0WRE8NceFRQLLPN8yI_lXk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "312093639159-6s8qv15thipuoa8of13rjplpq9648mqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

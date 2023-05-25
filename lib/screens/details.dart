@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../components/battom_bar.dart';
 
 class Detalis extends StatelessWidget {
   const Detalis({super.key});
@@ -132,7 +131,6 @@ class Detalis extends StatelessWidget {
           )
         ],
       ),
-      bottomNavigationBar: BottomBar(),
     );
   }
 }

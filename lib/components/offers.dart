@@ -11,24 +11,24 @@ Widget offers(context) {
     autoPlayInterval: 3000,
     isLoop: true,
     children: [
-      Image.asset(
-        'assets/img/img1.jpg',
+      Image.network(
+        'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=1200&h=-1&s=1',
         fit: BoxFit.fill,
       ),
-      Image.asset(
-        'assets/img/img2.jpg',
+      Image.network(
+        'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=1200&h=-1&s=1',
         fit: BoxFit.fill,
       ),
-      Image.asset(
-        'assets/img/img3.jpg',
+      Image.network(
+        'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=1200&h=-1&s=1',
         fit: BoxFit.fill,
       ),
-      Image.asset(
-        'assets/img/img4.jpg',
+      Image.network(
+        'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=1200&h=-1&s=1',
         fit: BoxFit.fill,
       ),
-      Image.asset(
-        'assets/img/img5.jpg',
+      Image.network(
+        'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/ba/29/5c/img-worlds-of-adventure.jpg?w=1200&h=-1&s=1',
         fit: BoxFit.fill,
       ),
     ],

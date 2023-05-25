@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:moageet/screens/MapScreen.dart';
+import 'package:moageet/screens/authenticate/phoneOTPVerification.dart';
 import 'package:moageet/screens/authenticate/register.dart';
 import 'package:moageet/screens/home/home.dart';
 
@@ -10,6 +12,10 @@ class Login extends StatefulWidget {
 }
 
 class _LoginState extends State<Login> {
+  TextEditingController usernameController = TextEditingController();
+  final TextEditingController passwordController = TextEditingController();
+
+  final myController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -35,6 +41,7 @@ class _LoginState extends State<Login> {
                   color: const Color(0xffEDEDED),
                 ),
                 child: const TextField(
+                  autocorrect: true,
                   style: TextStyle(color: Colors.white),
                   decoration: InputDecoration(
                     border: InputBorder.none,
@@ -77,7 +84,7 @@ class _LoginState extends State<Login> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const HomeScreen()));
+                            builder: (context) => const Register()));
                   },
                   child: const Text(
                     'Forgot password?',
@@ -93,10 +100,15 @@ class _LoginState extends State<Login> {
               padding: const EdgeInsets.all(16.0),
               child: OutlinedButton(
                 style: OutlinedButton.styleFrom(
+                  foregroundColor: const Color.fromARGB(255, 255, 255, 255),
                   backgroundColor: const Color(0xFFFFCF02),
-                  primary: const Color.fromARGB(255, 255, 255, 255),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const HomeScreen()));
+                },
                 child: const Text(
                   'Login',
                   style: TextStyle(fontSize: 28),
@@ -107,9 +119,7 @@ class _LoginState extends State<Login> {
               child: TextButton(
                 onPressed: () {
                   Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const Register()));
+                      context, MaterialPageRoute(builder: (context) => Map()));
                 },
                 child: RichText(
                   text: const TextSpan(
